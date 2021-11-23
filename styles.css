@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+    @apply text-[color:#A0B1C5] font-medium text-sm cursor-pointer hover:text-[color:#d3d5f3]
+}

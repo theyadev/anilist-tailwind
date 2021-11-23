@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" cotent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Home - Anilist</title>
+</head>
+<body class="bg-[#0b1622] font-rob">
+    <div class="hidden lg:grid w-full h-16 bg-[#152232] px-60 grid-cols-10 items-center py-0.5">
+        <div class="col-span-2 flex">
+            <img src="/images/icon.svg" class="h-12 w-12 cursor-pointer" alt="Anilist logo">
+        </div>
+        <div class="col-span-6 flex justify-center space-x-9">
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Profile</div>
+            <div class="nav-item">Anime List</div>
+            <div class="nav-item">Manga List</div>
+            <div class="nav-item">Browse</div>
+            <div class="nav-item">Forum</div>
+        </div>
+        <div class="col-span-2 relative flex items-center justify-self-end justify-center">
+            <svg class="w-5 h-5 cursor-pointer text-gray-400 hover:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            <div class="flex items-center justify-center group">
+            <img class="h-9 w-9 rounded ml-5 cursor-pointer peer" src="images/avatar.png" alt="avatar">
+            <svg class="w-4 h-4 ml-2 cursor-pointer text-gray-400 group-hover:text-gray-300 peer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <div class="absolute top-11 w-48 rounded shadow transition duration-200 scale-0 origin-top opacity-0 peer-hover:scale-100 peer-hover:opacity-100 hover:scale-100 hover:opacity-100">
+                <div class="flex flex-col space-y-3 text-gray-400 font-semibold text-sm px-8 py-3 rounded-t bg-[#151f2e] ">
+                    <div class="flex items-center space-x-3 cursor-pointer hover:text-gray-300">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                        <span>Profile</span>
+                    </div>
+                    <div class="flex items-center space-x-3 cursor-pointer hover:text-gray-300">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        <span>Notifications</span>
+                    </div>
+                    <div class="flex items-center space-x-3 cursor-pointer hover:text-gray-300">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                        <span>Settings</span>
+                    </div> 
+                </div>
+                <div class="rounded-b bg-[#0b1622] shadow text-gray-400 grid grid-cols-2 gap-3 py-3 px-8 text-xs font-semibold tracking-tight">
+                    <div class="flex items-center space-x-1 cursor-pointer hover:text-gray-300">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                        <span>Donate</span>
+                    </div>
+                    <div class="flex items-center space-x-1 cursor-pointer hover:text-gray-300">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path></svg>
+                        <span>Apps</span>
+                    </div>
+                    <div class="flex items-center space-x-1 cursor-pointer hover:text-gray-300">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>
+                        <span>Discord</span>
+                    </div>
+                    <div class="flex items-center space-x-1 cursor-pointer hover:text-gray-300">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg>
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="px-64 mt-11">
+        <div class="grid grid-cols-12 gap-10">
+            <div class="col-span-7">
+                <div class="grid grid-cols-2 text-sm pb-3">
+                    <span class="text-[color:#A0B1C5] font-medium">Activity</span>
+                    <div class="justify-self-end flex items-center text-xs cursor-pointer group">
+                        <svg class="w-4 h-4 mr-3 text-[color:#606266] transition duration-300 opacity-0 group-hover:opacity-100 hover:text-[color:#3DB4F2]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd"></path></svg>
+                        <div class=" bg-[#0F161F] font-medium px-4 py-1 rounded-l text-[color:#3DB4F2]">Following</div>
+                        <div class="text-[color:#8596A5] bg-[#152232] px-4 py-1 rounded-r hover:text-[color:#3DB4F2]">Global</div>
+                    </div>
+                </div>
+                <input class="mt-3 w-full border-none bg-[#151f2e] rounded placeholder-gray-300 text-[color:#A0B1C5] text-sm font-light focus:outline-none focus:ring-transparent" type="text" placeholder="Write a status...">
+                <div class="flex flex-col mt-5 space-y-5">
+                    <div id="card" class="flex w-full h-[115px] bg-[#151f2e] rounded-r">
+                        <img class="rounded-l w-20" src="/images/cover.jpg" alt="Solo Leveling">
+                        <div class="px-3 py-2 w-2/3 flex flex-col">
+                            <div class="flex">
+                                <h3 class="cursor-pointer tracking-tight text-[color:#3DB4F2]">Theya</h3>
+                            </div>
+                            <p class="text-sm text-[color:#8596A5] tracking-tight">Read chapter 172 of <span class="cursor-pointer text-[color:#3DB4F2]">Na Honjaman Level Up</span></p>
+                            <div class="flex flex-grow items-center">
+                                <img class="h-10 w-10 rounded" src="/images/avatar.png" alt="Theya">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-grow items-end">
+                            <div class="text-xs font-medium text-[color:#8596A5] pr-2 pt-2">5 days ago</div>
+                            <div class="flex flex-col flex-grow justify-end pr-2 pb-2">
+                                <div class="flex space-x-1.5">
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">13</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>                                </div>
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">1</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card" class="flex w-full h-[115px] bg-[#151f2e] rounded-r">
+                        <img class="rounded-l w-20" src="/images/cover.jpg" alt="Solo Leveling">
+                        <div class="px-3 py-2 w-2/3 flex flex-col">
+                            <div class="flex">
+                                <h3 class="cursor-pointer tracking-tight text-[color:#3DB4F2]">Theya</h3>
+                            </div>
+                            <p class="text-sm text-[color:#8596A5] tracking-tight">Read chapter 172 of <span class="cursor-pointer text-[color:#3DB4F2]">Na Honjaman Level Up</span></p>
+                            <div class="flex flex-grow items-center">
+                                <img class="h-10 w-10 rounded" src="/images/avatar.png" alt="Theya">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-grow items-end">
+                            <div class="text-xs font-medium text-[color:#8596A5] pr-2 pt-2">5 days ago</div>
+                            <div class="flex flex-col flex-grow justify-end pr-2 pb-2">
+                                <div class="flex space-x-1.5">
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">13</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>                                </div>
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">1</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card" class="flex w-full h-[115px] bg-[#151f2e] rounded-r">
+                        <img class="rounded-l w-20" src="/images/cover.jpg" alt="Solo Leveling">
+                        <div class="px-3 py-2 w-2/3 flex flex-col">
+                            <div class="flex">
+                                <h3 class="cursor-pointer tracking-tight text-[color:#3DB4F2]">Theya</h3>
+                            </div>
+                            <p class="text-sm text-[color:#8596A5] tracking-tight">Read chapter 172 of <span class="cursor-pointer text-[color:#3DB4F2]">Na Honjaman Level Up</span></p>
+                            <div class="flex flex-grow items-center">
+                                <img class="h-10 w-10 rounded" src="/images/avatar.png" alt="Theya">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-grow items-end">
+                            <div class="text-xs font-medium text-[color:#8596A5] pr-2 pt-2">5 days ago</div>
+                            <div class="flex flex-col flex-grow justify-end pr-2 pb-2">
+                                <div class="flex space-x-1.5">
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">13</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>                                </div>
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">1</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card" class="flex w-full h-[115px] bg-[#151f2e] rounded-r">
+                        <img class="rounded-l w-20" src="/images/cover.jpg" alt="Solo Leveling">
+                        <div class="px-3 py-2 w-2/3 flex flex-col">
+                            <div class="flex">
+                                <h3 class="cursor-pointer tracking-tight text-[color:#3DB4F2]">Theya</h3>
+                            </div>
+                            <p class="text-sm text-[color:#8596A5] tracking-tight">Read chapter 172 of <span class="cursor-pointer text-[color:#3DB4F2]">Na Honjaman Level Up</span></p>
+                            <div class="flex flex-grow items-center">
+                                <img class="h-10 w-10 rounded" src="/images/avatar.png" alt="Theya">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-grow items-end">
+                            <div class="text-xs font-medium text-[color:#8596A5] pr-2 pt-2">5 days ago</div>
+                            <div class="flex flex-col flex-grow justify-end pr-2 pb-2">
+                                <div class="flex space-x-1.5">
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">13</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>                                </div>
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">1</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card" class="flex w-full h-[115px] bg-[#151f2e] rounded-r">
+                        <img class="rounded-l w-20" src="/images/cover.jpg" alt="Solo Leveling">
+                        <div class="px-3 py-2 w-2/3 flex flex-col">
+                            <div class="flex">
+                                <h3 class="cursor-pointer tracking-tight text-[color:#3DB4F2]">Theya</h3>
+                            </div>
+                            <p class="text-sm text-[color:#8596A5] tracking-tight">Read chapter 172 of <span class="cursor-pointer text-[color:#3DB4F2]">Na Honjaman Level Up</span></p>
+                            <div class="flex flex-grow items-center">
+                                <img class="h-10 w-10 rounded" src="/images/avatar.png" alt="Theya">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-grow items-end">
+                            <div class="text-xs font-medium text-[color:#8596A5] pr-2 pt-2">5 days ago</div>
+                            <div class="flex flex-col flex-grow justify-end pr-2 pb-2">
+                                <div class="flex space-x-1.5">
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">13</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>                                </div>
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">1</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card" class="flex w-full h-[115px] bg-[#151f2e] rounded-r">
+                        <img class="rounded-l w-20" src="/images/cover.jpg" alt="Solo Leveling">
+                        <div class="px-3 py-2 w-2/3 flex flex-col">
+                            <div class="flex">
+                                <h3 class="cursor-pointer tracking-tight text-[color:#3DB4F2]">Theya</h3>
+                            </div>
+                            <p class="text-sm text-[color:#8596A5] tracking-tight">Read chapter 172 of <span class="cursor-pointer text-[color:#3DB4F2]">Na Honjaman Level Up</span></p>
+                            <div class="flex flex-grow items-center">
+                                <img class="h-10 w-10 rounded" src="/images/avatar.png" alt="Theya">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-grow items-end">
+                            <div class="text-xs font-medium text-[color:#8596A5] pr-2 pt-2">5 days ago</div>
+                            <div class="flex flex-col flex-grow justify-end pr-2 pb-2">
+                                <div class="flex space-x-1.5">
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">13</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>                                </div>
+                                    <div class="flex items-center space-x-0.5 text-[color:#8db2db]">
+                                        <p class="text-xs font-bold">1</p>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-5">
+                <p class="text-sm text-[color:#A0B1C5] font-medium">Airing</p>
+                <div class="bg-[#151f2e] rounded w-full mt-2 px-5 pb-5 pt-2 flex flex-wrap justify-between">
+                    <div id="smallCard" class="relative flex cursor-pointer group mt-3">
+                        <img class="h-[115px] rounded" src="/images/cover2.jpg" alt="">  
+                        <div class="absolute w-full h-12 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-xs text-gray-200 flex flex-col items-center justify-center transition duration-150 group-hover:opacity-0">
+                            <p>Ep 8</p>
+                            <p>17h 42min</p>
+                        </div>   
+                        <div class="absolute w-full h-7 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-sm text-gray-200 flex flex-col items-center justify-center transition duration-300 opacity-0 group-hover:opacity-100">
+                            <p>7 +</p>
+                        </div>
+                        <div class="absolute z-20 w-60 h-full bg-[#0b1622] -right-60 rounded-r py-2 px-3 flex flex-col transition duration-300 scale-0 origin-left pointer-events-none group-hover:scale-100">
+                            <p class="text-[color:#A0B1C5] text-sm">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</p>
+                            <div class="mt-auto text-[color:#8596A5] text-xs">Progress: 7/10</div>
+                        </div>                
+                    </div>
+                    <div id="smallCard" class="relative flex cursor-pointer group mt-3">
+                        <img class="h-[115px] rounded" src="/images/cover2.jpg" alt="">  
+                        <div class="absolute w-full h-1 bg-[#e85d75] bottom-0 rounded-b z-10"></div>
+                        <div class="absolute w-full h-12 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-xs text-gray-200 flex flex-col items-center justify-center transition duration-150 group-hover:opacity-0">
+                            <p>Ep 8</p>
+                            <p>17h 42min</p>
+                        </div>   
+                        <div class="absolute w-full h-7 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-sm text-gray-200 flex flex-col items-center justify-center transition duration-300 opacity-0 group-hover:opacity-100">
+                            <p>7 +</p>
+                        </div>
+                        <div class="absolute z-20 w-60 h-full bg-[#0b1622] -right-60 rounded-r py-2 px-3 flex flex-col transition duration-300 scale-0 origin-left pointer-events-none group-hover:scale-100">
+                            <p class="text-[color:#A0B1C5] text-sm">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</p>
+                            <div class="mt-auto text-[color:#8596A5] text-xs">Progress: 7/10</div>
+                        </div>                
+                    </div>
+                    <div id="smallCard" class="relative flex cursor-pointer group mt-3">
+                        <img class="h-[115px] rounded" src="/images/cover2.jpg" alt="">  
+                        <div class="absolute w-full h-12 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-xs text-gray-200 flex flex-col items-center justify-center transition duration-150 group-hover:opacity-0">
+                            <p>Ep 8</p>
+                            <p>17h 42min</p>
+                        </div>   
+                        <div class="absolute w-full h-7 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-sm text-gray-200 flex flex-col items-center justify-center transition duration-300 opacity-0 group-hover:opacity-100">
+                            <p>7 +</p>
+                        </div>
+                        <div class="absolute z-20 w-60 h-full bg-[#0b1622] -right-60 rounded-r py-2 px-3 flex flex-col transition duration-300 scale-0 origin-left pointer-events-none group-hover:scale-100">
+                            <p class="text-[color:#A0B1C5] text-sm">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</p>
+                            <div class="mt-auto text-[color:#8596A5] text-xs">Progress: 7/10</div>
+                        </div>                
+                    </div>
+                    <div id="smallCard" class="relative flex cursor-pointer group mt-3">
+                        <img class="h-[115px] rounded" src="/images/cover2.jpg" alt="">  
+                        <div class="absolute w-full h-1 bg-[#e85d75] bottom-0 rounded-b z-10"></div>
+                        <div class="absolute w-full h-12 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-xs text-gray-200 flex flex-col items-center justify-center transition duration-150 group-hover:opacity-0">
+                            <p>Ep 8</p>
+                            <p>17h 42min</p>
+                        </div>   
+                        <div class="absolute w-full h-7 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-sm text-gray-200 flex flex-col items-center justify-center transition duration-300 opacity-0 group-hover:opacity-100">
+                            <p>7 +</p>
+                        </div>
+                        <div class="absolute z-20 w-60 h-full bg-[#0b1622] -right-60 rounded-r py-2 px-3 flex flex-col transition duration-300 scale-0 origin-left pointer-events-none group-hover:scale-100">
+                            <p class="text-[color:#A0B1C5] text-sm">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</p>
+                            <div class="mt-auto text-[color:#8596A5] text-xs">Progress: 7/10</div>
+                        </div>                
+                    </div>
+                    <div id="smallCard" class="relative flex cursor-pointer group mt-3">
+                        <img class="h-[115px] rounded" src="/images/cover2.jpg" alt="">  
+                        <div class="absolute w-full h-1 bg-[#e85d75] bottom-0 rounded-b z-10"></div>
+                        <div class="absolute w-full h-12 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-xs text-gray-200 flex flex-col items-center justify-center transition duration-150 group-hover:opacity-0">
+                            <p>Ep 8</p>
+                            <p>17h 42min</p>
+                        </div>   
+                        <div class="absolute w-full h-7 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-sm text-gray-200 flex flex-col items-center justify-center transition duration-300 opacity-0 group-hover:opacity-100">
+                            <p>7 +</p>
+                        </div>
+                        <div class="absolute z-20 w-60 h-full bg-[#0b1622] -right-60 rounded-r py-2 px-3 flex flex-col transition duration-300 scale-0 origin-left pointer-events-none group-hover:scale-100">
+                            <p class="text-[color:#A0B1C5] text-sm">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</p>
+                            <div class="mt-auto text-[color:#8596A5] text-xs">Progress: 7/10</div>
+                        </div>                
+                    </div>
+                </div>
+                <p class="text-sm text-[color:#A0B1C5] font-medium mt-8">Anime in progress</p>
+                <div class="bg-[#151f2e] rounded w-full mt-2 px-5 pb-5 pt-2 flex flex-wrap space-x-4">
+                    <div class="relative flex cursor-pointer group mt-3">
+                        <img class="h-[115px] rounded" src="/images/cover2.jpg" alt="">   
+                        <div class="absolute w-full h-7 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-sm text-gray-200 flex flex-col items-center justify-center transition duration-300 opacity-0 group-hover:opacity-100">
+                            <p>7 +</p>
+                        </div>
+                        <div class="absolute z-20 w-60 h-full bg-[#0b1622] -right-60 rounded-r py-2 px-3 flex flex-col transition duration-300 scale-0 origin-left pointer-events-none group-hover:scale-100">
+                            <p class="text-[color:#A0B1C5] text-sm">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</p>
+                            <div class="mt-auto text-[color:#8596A5] text-xs">Progress: 7/10</div>
+                        </div>                
+                    </div>
+                    <div class="relative flex cursor-pointer group mt-3">
+                        <img class="h-[115px] rounded" src="/images/cover2.jpg" alt="">   
+                        <div class="absolute w-full h-7 bg-opacity-50 bg-black backdrop-filter backdrop-blur-sm backdrop-opacity-60 bottom-0 rounded-b text-sm text-gray-200 flex flex-col items-center justify-center transition duration-300 opacity-0 group-hover:opacity-100">
+                            <p>7 +</p>
+                        </div>
+                        <div class="absolute z-10 w-60 h-full bg-[#0b1622] -right-60 rounded-r py-2 px-3 flex flex-col transition duration-300 scale-0 origin-left pointer-events-none group-hover:scale-100">
+                            <p class="text-[color:#A0B1C5] text-sm">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</p>
+                            <div class="mt-auto text-[color:#8596A5] text-xs">Progress: 7/10</div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
